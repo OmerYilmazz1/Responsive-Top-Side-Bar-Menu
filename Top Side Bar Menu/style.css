@@ -1,0 +1,106 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+html , body{
+    height: 100%;
+}
+.topBar{
+    width: 100%;
+    background-color: rgba(245, 245, 220, 0.662);
+    height: 9vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.logo{
+    cursor: pointer;
+    margin-right: 20%;
+}
+.menuList{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style-type: none;
+    gap: 20px;
+    margin-left: auto;
+}
+.menuList li{
+    padding: 7px;
+    border-radius: 7px;
+}
+.menuList li a{
+    text-decoration: none;
+    color: rgb(52, 52, 52);
+    font-weight: 900;
+}
+.menuList li:hover{
+    background-color: rgb(174, 174, 155);
+}
+.btn{
+    padding: 6px;
+    border-radius: 7px;
+    font-size: 16px;
+    border: none;
+    background-color: rgb(148, 141, 133);
+    cursor: pointer;
+    display: none;
+}
+.btn:hover{
+    background-color: rgb(84, 78, 68);
+}
+.sideBar{
+    background-color: rgb(252, 236, 217);
+    height: 91vh;
+    width: 200px;
+    display: grid;
+    display: none;
+    position: fixed;
+}
+.sideBar.active{
+    display: block;
+}
+.container{
+    margin: 10rem 0;
+}
+.menuList2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 2rem;
+}
+.menuList2 li{
+    list-style: none;
+    padding: 10px;
+    border-radius: 7px;
+}
+.menuList2 li a{
+    text-decoration: none;
+    color: black;
+    font-weight: 900;
+}
+@media (max-width : 480px){
+    .btn{
+        display: block;
+        font-size: 20px;
+        padding: 10px;
+    }
+    .menuList li{
+        display: none;
+    }
+}
+@media (min-width : 481px) and (max-width : 600px){
+    .btn{
+        display: block;
+        font-size: 20px;
+        padding: 10px;
+    }
+    .menuList li{
+        display: none;
+    }
+}
+
+
